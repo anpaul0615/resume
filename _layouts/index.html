@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<header>
+  <h1>anpaul0615.github.io</h1>
+  <p>this is github blog</p>
+  <p class="view"><a href="https://github.com/anpaul0615">View My GitHub Profile</a></p>
+
+  <!-- 메뉴, 메뉴별기능 정하기 -->
+  <nav>
+    <a href="{{ site.baseurl }}/">Blog</a>
+    <a href="{{ site.baseurl }}/about/">About</a>
+    <a href="{{ site.baseurl }}/books/">Books</a>
+    <a href="{{ site.baseurl }}/tags/">Tags</a>
+  </nav>
+</header>
+
+<!-- 페이징 처리하기 -->
+<section>
+  {{ content }}
+</section>
+
+<footer>
+  <p><small>Hosted on GitHub Pages &mdash; Theme by
+    <a href="https://github.com/orderedlist">orderedlist</a></small>
+  </p>
+</footer>

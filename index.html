@@ -1,0 +1,14 @@
+---
+layout: index
+title: 대문
+---
+
+{% for post in site.posts %}
+  <h3>
+    <a id="title1" class="anchor" href="{{ site.baseurl }}{{ post.url }}" aria-hidden="true">
+      <span aria-hidden="true" class="octicon octicon-link">{{ post.title }}</span>
+    </a>
+
+  </h3>
+  <p>{{ post.summary }}</p>
+{% endfor %}
