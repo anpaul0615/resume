@@ -1,3 +1,7 @@
+# 푸터 링크
+footer-links:
+  email: anpaul0615@gmail.com
+
 # 파일 종류별 위치
 source:       .
 destination:  ./_site
@@ -32,17 +36,10 @@ lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
 
-# 서버 작동
-detach:  false
-port:    4000
-host:    127.0.0.1
-baseurl: "" # does not include hostname
-
 # 출력 방식
-permalink:     /:categories/:title
+permalink: /:categories/:title
 paginate_path: /page:num
-timezone:      null
-
+timezone: Asia/Seoul
 quiet:    false
 defaults: []
 

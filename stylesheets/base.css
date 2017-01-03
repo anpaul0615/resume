@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+
+/* bootstrap custumizing */
+
+body {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+}
+.container.margin-top {
+    margin-top: 5em;
+}
+.container.text-align-center {
+    text-align: center;
+}

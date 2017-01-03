@@ -1,17 +1,16 @@
 ---
-layout: post
-title: 2012년 8월 25일 포스트
-summary : 포스트요약 abc
+layout: base
+category: "diray"
+title: "제목입니다"
+tags: 
 ---
-## {{ page.title }}
 
->인용글입니다.  
-안녕하세요  
-하하하  
-줄바꿀까요?  
+### {{ page.title }} <small>{{ page.date | date: "%Y-%m-%d" }}</small>
+---
 
+>내용입니다.
+
+
+내용입니다.  
+내용입니다.  
 내용입니다.
-
-내용입니다.
-
-#### {{ page.date | date: "%Y-%m-%d" }}
