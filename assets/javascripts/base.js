@@ -1,4 +1,4 @@
-$(function(){
+(function (window, document, $) {
 
   // 현재메뉴 활성화
   let current = $('#navbar').attr('data-active');
@@ -7,4 +7,4 @@ $(function(){
     if(current == path) $(this).addClass('active');
   });
 
-});
+}(window, window.document, window.jQuery));

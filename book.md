@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Book
-permalink: /book
+permalink: /book/
 ---
 
 # this is ~/book

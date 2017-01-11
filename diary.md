@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Diary
-permalink: /diary
+permalink: /diary/
 ---
 
 # this is ~/diary
