@@ -11,7 +11,7 @@ set filename=%now_date%-%now_hour%-%now_min%-%now_sec%.md
 @chcp 65001
 @echo --- >> .\%filename%
 @echo layout: base >> .\%filename%
-@echo category: "diray" >> .\%filename%
+@echo category: "diary" >> .\%filename%
 @echo date: %now_date% %now_hour%:%now_min%:%now_sec%  >> .\%filename%
 @echo title: "hello" >> .\%filename%
 @echo tags: >> .\%filename%
