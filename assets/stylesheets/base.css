@@ -20,3 +20,6 @@ body::-webkit-scrollbar {
 .container.text-align-center {
     text-align: center;
 }
+.container img {
+    max-width: 100%;
+}
