@@ -11,7 +11,7 @@ permalink: /archive/
   {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
   {% if month != nmonth %}
   {% if forloop.index != 1 %}</ul>{% endif %}
-  <h3>{{ post.date | date: '%Y년 %m월' }}</h3><ul>
+  <h2>{{ post.date | date: '%Y년 %m월' }}</h2><ul>
   {% endif %}
   <li>
     <span class="date">[<a href="{{ post.category }}">{{ post.category }}</a>]</span>

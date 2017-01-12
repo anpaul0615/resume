@@ -22,7 +22,7 @@ set filename=%now_date%-%now_hour%-%now_min%-%now_sec%.md
 @echo --- >> .\%filename%
 
 @echo. >> .\%filename%
-@echo ### {{ page.title }} ^<small^>{{ page.date ^| date: "%%Y-%%m-%%d" }}^</small^> >> .\%filename%
+@echo ## {{ page.title }} ^<small^>{{ page.date ^| date: "%%Y-%%m-%%d" }}^</small^> >> .\%filename%
 @echo --- >> .\%filename%
 @echo. >> .\%filename%
 
