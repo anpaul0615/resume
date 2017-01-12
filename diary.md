@@ -1,9 +1,9 @@
 ---
 layout: base
 title: Diary
-permalink: /diary
+permalink: /diary/
 ---
 
-# this is ~/diary
+## this is ~/diary
 
 display post-list about "diary"

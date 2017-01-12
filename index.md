@@ -4,6 +4,6 @@ title: Home
 permalink: /
 ---
 
-# this is ~/
+## this is ~/
 
 display index-page

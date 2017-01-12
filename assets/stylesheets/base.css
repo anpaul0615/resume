@@ -13,11 +13,13 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.container {
-}
+.container {}
 .container.margin-top {
     margin-top: 5em;
 }
 .container.text-align-center {
     text-align: center;
+}
+.container img {
+    max-width: 100%;
 }

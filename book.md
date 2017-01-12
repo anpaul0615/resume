@@ -1,9 +1,9 @@
 ---
 layout: base
 title: Book
-permalink: /book
+permalink: /book/
 ---
 
-# this is ~/book
+## this is ~/book
 
 display post-list about "book"
