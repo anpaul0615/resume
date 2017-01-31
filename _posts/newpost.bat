@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 
 # 현재시각
 set now_date=%date%
@@ -14,7 +14,7 @@ set filename=%now_date%-%now_hour%-%now_min%-%now_sec%.md
 # 템플릿파일 작성
 @chcp 65001
 @echo --- >> .\%filename%
-@echo layout: base >> .\%filename%
+@echo layout: post >> .\%filename%
 @echo category: "diary" >> .\%filename%
 @echo date: %now_date% %now_hour%:%now_min%:%now_sec%  >> .\%filename%
 @echo title: "hello" >> .\%filename%
@@ -22,10 +22,6 @@ set filename=%now_date%-%now_hour%-%now_min%-%now_sec%.md
 @echo --- >> .\%filename%
 
 @echo. >> .\%filename%
-@echo ## {{ page.title }} ^<small^>{{ page.date ^| date: "%%Y-%%m-%%d" }}^</small^> >> .\%filename%
-@echo --- >> .\%filename%
-@echo. >> .\%filename%
-
 @echo ^>hello >> .\%filename%
 @echo. >> .\%filename%
 
