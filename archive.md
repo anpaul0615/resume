@@ -4,18 +4,16 @@ title: Archive
 permalink: /archive/
 ---
 
-<!-- from http://www.mitsake.net/2012/04/archives-in-jekyll/ -->
-
-{% for post in site.posts %}
-  {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-  {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
-  {% if month != nmonth %}
-  {% if forloop.index != 1 %}</ul>{% endif %}
-  <h2>{{ post.date | date: '%Y년 %m월' }}</h2><ul>
-  {% endif %}
-  <li>
-    <span class="date">[<a href="{{ post.category }}">{{ post.category }}</a>]</span>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-  </li>
-{% endfor %}
+<link href="/assets/stylesheets/timeline.css" rel="stylesheet" />
+<div class="container">
+  <ul class="timeline">
+    {% for post in site.posts %}
+      {% include timeline.html %}
+      {% assign month = post.date | date: "%Y%m" %}
+      {% assign pmonth = post.previous.date | date: "%Y%m" %}
+      {% if month != pmonth %}
+        {% include timeline-month.html %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
