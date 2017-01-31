@@ -1,0 +1,15 @@
+<li>
+  <div class="timeline-panel">
+    <div class="timeline-heading">
+      <h4 class="timeline-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      <p>
+        <small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ post.date | date: "%Y-%m-%d" }}</small>
+        &nbsp;
+        <small class="text-muted"><i class="glyphicon glyphicon-tag"></i> <a href="/{{ post.category }}">{{ post.category }}</a></small>
+      </p>
+    </div>
+    <div class="timeline-body">
+      <p>{{ post.content | strip_html | truncate: 100 }}</p>
+    </div>
+  </div>
+</li>
