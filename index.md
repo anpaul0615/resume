@@ -9,7 +9,7 @@ permalink: /
 <script>
 $(function(){
   $("#typed > h1 > span").typed({
-      strings: ["Firmware, Javascript, Cloud", "Happy Coding!"],
+      strings: ["Read, Think, Make", "Happy Coding!"],
       typeSpeed: 20,
       backDelay: 2500,
       backSpeed: 0,
