@@ -6,7 +6,7 @@
         <small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ post.date | date: "%Y-%m-%d" }}</small>
         &nbsp;
         {% if post.archive %}
-          <small class="text-muted"><i class="glyphicon glyphicon-tag"></i> <a href="/archive/{{ post.archive }}">{{ post.archive }}</a></small>
+          <small class="text-muted"><i class="glyphicon glyphicon-tag"></i> <a href="/archive#{{ post.archive }}">{{ post.archive }}</a></small>
         {% endif %}
       </p>
     </div>

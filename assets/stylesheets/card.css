@@ -1,7 +1,7 @@
-@charset “utf-8”;
+@charset "utf-8";
 
 /* All Device */
-.box {
+.card {
   float: left;
   background: #ffffff;
   border: 1px solid #999;
@@ -12,13 +12,13 @@
   -webkit-border-radius: 5px;
   -webkit-box-shadow: 0px 0px 5px 1px #aaa;
 }
-.box > h4 > a {
+.card > h4 > a {
   color: #333;
 }
 
 /* Mobile Device */
 @media all and (max-width:768px) {
-  .box{
+  .card{
     float: none;
     width: 90%;
     margin-left: auto;
@@ -27,19 +27,19 @@
 }
 /* Tablet & Desktop Device */
 @media all and (min-width:768px) and (max-width:992px) {
-  .box{
+  .card{
     width: 44%;
   }
 }
 /* Tablet Device */
 @media all and (min-width:992px) and (max-width:1200px) {
-  .box{
+  .card{
     width: 30%;
   }
 }
 /* Desktop Device */
 @media all and (min-width:1200px) {
-  .box{
+  .card{
     width: 22%;
   }
 }
