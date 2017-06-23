@@ -37,7 +37,7 @@ excerpt_separator: "\n\n"
 incremental: false
 
 # 출력 방식
-permalink: /:categories/:year-:month-:day-:hour-:minute-:second
+permalink: /posts/:year-:month-:day-:hour-:minute-:second
 paginate_path: /page:num
 timezone: Asia/Seoul
 quiet:    false

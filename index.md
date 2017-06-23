@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-<meta http-equiv="refresh" content="10;url='/archive'" />
+<meta http-equiv="refresh" content="10;url='/blog'" />
 <link href="/assets/stylesheets/typed.css" rel="stylesheet" />
 <script src="/assets/javascripts/typed.js"></script>
 <script>
