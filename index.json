@@ -1,0 +1,14 @@
+---
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title }}",
+      "content"  : "{{ post.content | strip_html | strip_newlines | strip | truncate: 100 }}",
+      "archive"  : "{{ post.archive }}",
+      "date"  : "{{ post.date  | date: '%Y-%m-%d' }}",
+      "url"     : "{{ post.url }}"
+    },
+  {% endfor %}
+  null
+]

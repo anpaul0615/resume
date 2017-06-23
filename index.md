@@ -4,12 +4,13 @@ title: Home
 permalink: /
 ---
 
+<meta http-equiv="refresh" content="10;url='/blog'" />
 <link href="/assets/stylesheets/typed.css" rel="stylesheet" />
 <script src="/assets/javascripts/typed.js"></script>
 <script>
 $(function(){
   $("#typed > h1 > span").typed({
-      strings: ["Firmware, Javascript, Cloud", "Happy Coding!"],
+      strings: ["Read, Think, Make", "Happy Coding!"],
       typeSpeed: 20,
       backDelay: 2500,
       backSpeed: 0,
