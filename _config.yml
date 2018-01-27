@@ -1,0 +1,39 @@
+# 푸터 링크
+footer-links:
+  email: anpaul0615@gmail.com
+
+# 파일 종류별 위치
+source:       .
+destination:  ./_site
+layouts_dir:  ./_layouts
+collections:  null
+
+# 읽기 처리방법
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# 컨텐츠 필터링
+show_drafts: null
+limit_posts: 0
+future:      true
+unpublished: false
+
+# 플러그인
+whitelist: []
+plugins:   []
+
+# 변환
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
+
+# 출력 방식
+timezone: Asia/Seoul
+quiet:    false
+defaults: []
