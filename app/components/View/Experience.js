@@ -1,12 +1,11 @@
 define(function(require, exports, module) {
     // Import
     var React = require('react');
-    var ReactBootstrap = require('react-bootstrap');
     var createReactClass = require('create-react-class');
     var Axios = require('axios');
     // Component Style
     var style = {
-        root: {},
+        root: {}
     };
     // Component
     return Experience = createReactClass({

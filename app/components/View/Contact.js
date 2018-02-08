@@ -1,15 +1,10 @@
 define(function(require, exports, module) {
     // Import
     var React = require('react');
-    var ReactBootstrap = require('react-bootstrap');
     var createReactClass = require('create-react-class');
-    // Bootstrap Component
-    var Navbar = ReactBootstrap.Navbar;
-    var Nav = ReactBootstrap.Nav;
-    var NavItem = ReactBootstrap.NavItem;
     // Component Style
     var style = {
-        root: {},
+        root: {}
     };
     // Component
     return Contact = createReactClass({
@@ -17,21 +12,24 @@ define(function(require, exports, module) {
         handleClickContact: function() {
             alert('contact!!');
         },
-        componentDidMount: function() {
-            // console.log('[Component] Contact Mounted!!');
-            // console.log(this.props);
-        },
         render: function() {
             return React.createElement(
-                Navbar.Collapse,
-                { style: style.root },
+                'div',
+                { className: 'navbar-collapse collapse' },
                 React.createElement(
-                    Nav,
-                    { pullRight: true },
+                    'ul',
+                    { className: 'nav navbar-nav pull-right' },
                     React.createElement(
-                        NavItem,
-                        { onClick: this.handleClickContact },
-                        "Contact Me"
+                        'li',
+                        { role: 'presentation' },
+                        React.createElement(
+                            'a',
+                            {
+                                href: '#',
+                                onClick: this.handleClickContact
+                            }, 
+                            'Contact Me'
+                        )
                     )
                 )
             );

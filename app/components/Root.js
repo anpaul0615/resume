@@ -8,10 +8,6 @@ define(function(require, exports, module) {
     // Component
     return Root = createReactClass({
         displayName: 'Root',
-        componentDidMount: function() {
-            // console.log('[Component] Root Mounted!!');
-            // console.log(this.props);
-        },
         render: function() {
             return [
                 React.createElement( Header, { key: 'header' } ),

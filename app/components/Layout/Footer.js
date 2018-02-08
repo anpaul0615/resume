@@ -13,10 +13,6 @@ define(function(require, exports, module) {
     // Component
     return Footer = createReactClass({
         displayName: 'Footer',
-        componentDidMount: function() {
-            // console.log('[Layout] Footer Mounted!!');
-            // console.log(this.props);
-        },
         render: function() {
             return React.createElement(
                 "footer",

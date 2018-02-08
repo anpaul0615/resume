@@ -1,35 +1,33 @@
 define(function(require, exports, module) {
     // Import
     var React = require('react');
-    var ReactBootstrap = require('react-bootstrap');
     var createReactClass = require('create-react-class');
-    // Bootstrap Component
-    var Navbar = ReactBootstrap.Navbar;
     // Component Style
     var style = {
-        root: {},
+        root: {}
     };
     // Component
     return Logo = createReactClass({
         displayName: 'Logo',
-        componentDidMount: function() {
-            // console.log('[Component] Logo Mounted!!');
-            // console.log(this.props);
-        },
         render: function() {
             return React.createElement(
-                Navbar.Header,
-                { style: style.root },
+                'div',
+                { className: 'navbar-header' },
+                // logo-text
                 React.createElement(
-                    Navbar.Brand,
-                    null,
-                    React.createElement(
-                        "a",
-                        { href: "/" },
-                        "anpaul0615.github.io"
-                    )
+                    'a',
+                    { className: 'navbar-brand', href: '/' },
+                    'anpaul0615.github.io'
                 ),
-                React.createElement(Navbar.Toggle, null)
+                // toggle-button (by media-query)
+                React.createElement(
+                    'button',
+                    { className: 'navbar-toggle collapsed' },
+                    React.createElement( 'span', { className:'sr-only' }, 'Toggle navigation' ),
+                    React.createElement( 'span', { className:'icon-bar' } ),
+                    React.createElement( 'span', { className:'icon-bar' } ),
+                    React.createElement( 'span', { className:'icon-bar' } )
+                )
             );
         }
     });
