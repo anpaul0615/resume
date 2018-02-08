@@ -1,9 +1,23 @@
 {
-  "title": "Introduce",
-  "image_url": "https://avatars0.githubusercontent.com/u/8488507?s=460&v=4",
-  "description" : [
-    "내용입니다.",
-    "내용입니다.",
-    "내용입니다."
+  "avatar": "https://avatars0.githubusercontent.com/u/8488507?s=460&v=4",
+  "name": "Paul An",
+  "whoami": "An ordinary developer.",
+  "links": [
+    {
+      "name": "Blog",
+      "url": "https://anpaul0615.wordpress.com"
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/anpaul0615"
+    },
+    {
+      "name": "Gitbook",
+      "url": "https://www.gitbook.com/@anpaul0615"
+    },
+    {
+      "name": "Pinterest",
+      "url": "https://www.pinterest.co.kr/anpaul0615"
+    }
   ]
 }
