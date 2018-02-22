@@ -49,7 +49,9 @@ define(function(require, exports, module) {
             return this.state.companies.length > 0
             ?
             React.createElement( 'div', { className: 'col-xs-12', style: style.root },
-                // companies 
+                // section-title
+                React.createElement( 'h2', null, 'Experience' ),
+                // companies
                 this.state.companies.map(function(company, company_idx){
                     return [
                         // company-info
