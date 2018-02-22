@@ -3,6 +3,8 @@ define(function(require, exports, module) {
     var React = require('react');
     var createReactClass = require('create-react-class');
     var Axios = require('axios');
+    var Company = require('./Company');
+    var MoreButton = require('./MoreButton');
     // Component Style
     var style = {
         root: {
@@ -10,12 +12,6 @@ define(function(require, exports, module) {
             height: 'auto',
             paddingBottom: '20px',
             borderBottom: '1px solid #eee'
-        },
-        project_title: {
-            fontWeight: 'bold'
-        },
-        tech_stacks: {
-            margin: '0 1px'
         }
     };
     // Component
@@ -24,7 +20,8 @@ define(function(require, exports, module) {
         getInitialState: function() {
             return {
                 description: 'project experience loading..',
-                companies: []
+                companies: [],
+                isFold: true
             };
         },
         componentDidMount: function() {
@@ -45,57 +42,44 @@ define(function(require, exports, module) {
                 console.log(err);
             });
         },
+        onClickMoreButton: function(){
+            this.setState({
+                description: this.state.description,
+                companies: this.state.companies,
+                isFold: false
+            });
+        },
         render: function() {
             return this.state.companies.length > 0
             ?
             React.createElement( 'div', { className: 'col-xs-12', style: style.root },
                 // section-title
                 React.createElement( 'h2', null, 'Experience' ),
-                // companies
+                // first-company 
+                React.createElement( Company,
+                    {
+                        company: this.state.companies[0],
+                        company_idx: 0,
+                        key: 'company-'+ 0
+                    }
+                ),
+                // remained-companies
+                this.state.isFold === false
+                ?
                 this.state.companies.map(function(company, company_idx){
-                    return [
-                        // company-info
-                        React.createElement( 'h3', { key: 'company-'+ company_idx },
-                            company.name,
-                            React.createElement( 'br', null ),
-                            React.createElement( 'small', null, company.job_title ),
-                            React.createElement( 'small', null, ', ' ),
-                            React.createElement( 'small', null, company.working_period )
-                        ),
-                        // projects
-                        React.createElement( 'ul', { key: 'company-'+ company_idx +'-projects' },
-                            company.projects.map(function(project, project_idx){
-                                return React.createElement( 'li', 
-                                    {
-                                        key: 'company-'+ company_idx +'-project-'+ project_idx
-                                    }, 
-                                    React.createElement( 'a',
-                                        {
-                                            style: style.project_title,
-                                            href: project.detail,
-                                            target: "_blank"
-                                        },
-                                        project.title_en
-                                    ),
-                                    React.createElement( 'br', null ),
-                                    React.createElement( 'small', null, project.description_en ),
-                                    React.createElement( 'br', null ),
-                                    // tech-stacks
-                                    project.tech_stacks.map(function(stack, stack_idx){
-                                        return React.createElement( 'span',
-                                            {
-                                                className: 'label label-default',
-                                                style: style.tech_stacks,
-                                                key: 'company-'+ company_idx +'-project-'+ project_idx +'-stack-'+ stack_idx
-                                            },
-                                            stack
-                                        );
-                                    })
-                                );
-                            })
-                        )
-                    ];
+                    if(company_idx === 0)
+                        return;
+                    else 
+                        return React.createElement( Company,
+                            {
+                                company: company,
+                                company_idx: company_idx,
+                                key: 'company-'+ company_idx
+                            }
+                        );
                 })
+                :
+                React.createElement( MoreButton, { onClickMoreButton: this.onClickMoreButton })
             )
             :
             React.createElement( 'p', null, 'no-data' );
