@@ -11,6 +11,12 @@ define(function(require, exports, module) {
             paddingBottom: '20px',
             borderBottom: '1px solid #eee'
         },
+        project_title: {
+            fontWeight: 'bold'
+        },
+        tech_stacks: {
+            margin: '0 1px'
+        }
     };
     // Component
     return Experience = createReactClass({
@@ -57,16 +63,32 @@ define(function(require, exports, module) {
                         // projects
                         React.createElement( 'ul', { key: 'company-'+ company_idx +'-projects' },
                             company.projects.map(function(project, project_idx){
-                                return React.createElement( 'li', { key: 'company-'+ company_idx +'-projects-'+ project_idx }, 
+                                return React.createElement( 'li', 
+                                    {
+                                        key: 'company-'+ company_idx +'-project-'+ project_idx
+                                    }, 
                                     React.createElement( 'a',
                                         {
+                                            style: style.project_title,
                                             href: project.detail,
                                             target: "_blank"
                                         },
                                         project.title_en
                                     ),
                                     React.createElement( 'br', null ),
-                                    React.createElement( 'small', null, project.description_en )
+                                    React.createElement( 'small', null, project.description_en ),
+                                    React.createElement( 'br', null ),
+                                    // tech-stacks
+                                    project.tech_stacks.map(function(stack, stack_idx){
+                                        return React.createElement( 'span',
+                                            {
+                                                className: 'label label-default',
+                                                style: style.tech_stacks,
+                                                key: 'company-'+ company_idx +'-project-'+ project_idx +'-stack-'+ stack_idx
+                                            },
+                                            stack
+                                        );
+                                    })
                                 );
                             })
                         )
