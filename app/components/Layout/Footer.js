@@ -7,7 +7,7 @@ define(function(require, exports, module) {
         root: {
             textAlign: 'center',
             borderTop: '1px solid #eee',
-            paddingTop: '2em'
+            padding: '2em 0'
         }
     };
     // Component
