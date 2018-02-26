@@ -1,29 +1,76 @@
-[  
-  {
-    "title": "커뮤니티 A",
-    "date": "0000-00-00 ~ 0000-00-00",
-    "description": [
-      "내용입니다.",
-      "내용입니다.",
-      "내용입니다."
-    ]
-  },
-  {
-    "title": "커뮤니티 B",
-    "date": "0000-00-00 ~ 0000-00-00",
-    "description": [
-      "내용입니다.",
-      "내용입니다.",
-      "내용입니다."
-    ]
-  },
-  {
-    "title": "커뮤니티 C",
-    "date": "0000-00-00 ~ 0000-00-00",
-    "description": [
-      "내용입니다.",
-      "내용입니다.",
-      "내용입니다."
-    ]
-  }
-]
+{
+  "description": "Description About Job History",
+  "activities": [  
+    {
+      "title": "React Seoul",
+      "date": "20171104",
+      "host": "ReactKorea",
+      "host_link": "seoul.reactjs.kr",
+      "descriptions": [
+        "React로 다른 페이지에 임베드되는 웹앱 개발기.",
+        "React/Redux for Smart TV UI",
+        "리액트 네이티브 어디까지 해봤니?",
+        "Storybook을 통한 React UI Component 및 State 관리하기",
+        "Decorator + HOC + React = Fantastic!!"
+      ]
+    },
+    {
+      "title": "Data Analysis And Visualization with ElasticSearch And Splunk",
+      "date": "20170825",
+      "host": "BusanSmartAppForum",
+      "host_link": "fb.com/groups/smartphone.forum",
+      "descriptions": [
+        "Splunk 기반 로그 수집 및 분석 - 조철현",
+        "ElasticSearch 대시보드 제작 실습 - 김종민"
+      ]
+    },
+    {
+      "title": "AWS Systems Operations And Develop",
+      "date": "20160615 ~ 20160617",
+      "host": "SuperTrack",
+      "host_link": "edu.supertrack.co.kr",
+      "descriptions": [
+        "AWS CLI 기반 VPC, EC2, ELB 및 Auto Scaling 인프라 구축",
+        "CloudFormation 기반 인프라 구축 및 배포 자동화",
+        "VPC 기반 Priave Network 운영 방법",
+        "Cognito 및 IAM Role 기반 클라우드 보안",
+        "EC2 인스턴스 최적화"
+      ]
+    },
+    {
+      "title": "AWS Architecting",
+      "date": "20160531 ~ 20160603",
+      "host": "SuperTrack",
+      "host_link": "edu.supertrack.co.kr",
+      "descriptions": [
+        "AWS 권장 아키텍처 원리 및 모범 사례를 기반으로 아키텍처 관련 의사 결정을 내리는 방법",
+        "AWS 서비스를 활용하여 확장성, 안정성 및 고가용성을 갖춘 인프라를 구축하는 방법",
+        "AWS 관리형 서비스를 활용하여 인프라의 유연성과 복원력을 강화하는 방법",
+        "성능을 향상하고 비용을 절감할 수 있도록 AWS 기반 인프라를 좀 더 효율적으로 만드는 방법",
+        "잘 설계된 프레임워크를 사용하여 AWS 솔루션으로 아키텍처를 개선하는 방법"
+      ]
+    },
+    {
+      "title": "Application Database Modeling",
+      "date": "20160315 ~ 20160317",
+      "host": "SamsungSDS",
+      "host_link": "credu.com",
+      "descriptions": [
+        "내용입니다.",
+        "내용입니다.",
+        "내용입니다."
+      ]
+    },
+    {
+      "title": "eGovFramework",
+      "date": "20140414 ~ 20140418",
+      "host": "SamsungSDS",
+      "host_link": "credu.com",
+      "descriptions": [
+        "내용입니다.",
+        "내용입니다.",
+        "내용입니다."
+      ]
+    }
+  ]
+}
