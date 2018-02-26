@@ -5,7 +5,8 @@ define(function(require, exports, module) {
     // Component Style
     var style = {
         root: {
-            marginTop: '20px',
+            color: '#333',
+            marginTop: '20px'
         }
     };
     // Component
@@ -15,13 +16,22 @@ define(function(require, exports, module) {
             var _onClickMoreButton = this.props.onClickMoreButton;
             return React.createElement( 'button',
                 {
-                    className: 'btn btn-default btn-xs btn-block',
+                    className: 'btn btn-link btn-xs btn-block',
                     style: style.root,
                     onClick: function(){
                         _onClickMoreButton();
                     }
                 },
-                'more'
+                // 'more'
+                // glyphicon glyphicon-chevron-down
+                // glyphicon glyphicon-menu-down
+                // glyphicon glyphicon-option-horizontal
+                React.createElement( 'span',
+                    {
+                        className:'glyphicon glyphicon-menu-down',
+                        'aria-hidden': 'true'
+                    }
+                )
             );
         }
     });
