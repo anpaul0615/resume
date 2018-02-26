@@ -17,10 +17,9 @@ define(function(require, exports, module) {
         displayName: 'Company',
         render: function() {
             var company = this.props.company;
-            var company_idx = this.props.company_idx;
             return [
                 // company-info
-                React.createElement( 'h3', { key: 'company-'+ company_idx +'-info' },
+                React.createElement( 'h3', { key: 'company-info' },
                     company.name,
                     React.createElement( 'br', null ),
                     React.createElement( 'small', null, company.job_title ),
@@ -28,11 +27,11 @@ define(function(require, exports, module) {
                     React.createElement( 'small', null, company.working_period )
                 ),
                 // projects
-                React.createElement( 'ul', { key: 'company-'+ company_idx +'-projects' },
+                React.createElement( 'ul', { key: 'projects' },
                     company.projects.map(function(project, project_idx){
                         return React.createElement( 'li', 
                             {
-                                key: 'company-'+ company_idx +'-project-'+ project_idx
+                                key: 'project-'+ project_idx
                             }, 
                             React.createElement( 'a',
                                 {
@@ -51,7 +50,7 @@ define(function(require, exports, module) {
                                     {
                                         className: 'label label-default',
                                         style: style.tech_stacks,
-                                        key: 'company-'+ company_idx +'-project-'+ project_idx +'-stack-'+ stack_idx
+                                        key: 'project-'+ project_idx +'-tech-'+ stack_idx
                                     },
                                     stack
                                 );

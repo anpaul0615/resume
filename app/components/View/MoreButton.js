@@ -4,7 +4,9 @@ define(function(require, exports, module) {
     var createReactClass = require('create-react-class');
     // Component Style
     var style = {
-        root: {}
+        root: {
+            marginTop: '20px',
+        }
     };
     // Component
     return Contact = createReactClass({
@@ -14,6 +16,7 @@ define(function(require, exports, module) {
             return React.createElement( 'button',
                 {
                     className: 'btn btn-default btn-xs btn-block',
+                    style: style.root,
                     onClick: function(){
                         _onClickMoreButton();
                     }

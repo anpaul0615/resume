@@ -53,33 +53,26 @@ define(function(require, exports, module) {
             return this.state.companies.length > 0
             ?
             React.createElement( 'div', { className: 'col-xs-12', style: style.root },
-                // section-title
                 React.createElement( 'h2', null, 'Experience' ),
-                // first-company 
-                React.createElement( Company,
-                    {
-                        company: this.state.companies[0],
-                        company_idx: 0,
-                        key: 'company-'+ 0
-                    }
-                ),
-                // remained-companies
-                this.state.isFold === false
-                ?
-                this.state.companies.map(function(company, company_idx){
-                    if(company_idx === 0)
-                        return;
-                    else 
-                        return React.createElement( Company,
-                            {
-                                company: company,
-                                company_idx: company_idx,
-                                key: 'company-'+ company_idx
-                            }
-                        );
-                })
-                :
-                React.createElement( MoreButton, { onClickMoreButton: this.onClickMoreButton })
+                React.createElement( 'ul', null,
+                    // first 
+                    React.createElement( 'li', { key: 'company-0' },
+                        React.createElement( Company, { company: this.state.companies[0] } )
+                    ),
+                    // remains
+                    this.state.isFold === false
+                    ?
+                    this.state.companies.map(function(company, company_idx){
+                        if(company_idx === 0)
+                            return;
+                        else 
+                            return React.createElement( 'li', { key: 'company-'+ company_idx },
+                                React.createElement( Company, { key: 'company-'+ company_idx, company: company } )
+                            );
+                    })
+                    :
+                    React.createElement( MoreButton, { onClickMoreButton: this.onClickMoreButton })
+                )
             )
             :
             React.createElement( 'p', null, 'no-data' );
