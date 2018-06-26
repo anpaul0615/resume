@@ -9,8 +9,9 @@ define(function(require, exports, module) {
     // Component
     return Contact = createReactClass({
         displayName: 'Contact',
-        handleClickContact: function() {
-            alert('contact!!');
+        handleClickContact: function(event) {
+            event.preventDefault();
+            this.props.handleContactButtonClick();
         },
         render: function() {
             return React.createElement(

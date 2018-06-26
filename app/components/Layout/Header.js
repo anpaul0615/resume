@@ -19,7 +19,8 @@ define(function(require, exports, module) {
                     'div',
                     { className: 'container' },
                     React.createElement( Logo, null ),
-                    React.createElement( Contact, null )
+                    React.createElement( Contact, {
+                        handleContactButtonClick: this.props.handleContactButtonClick } )
                 )
             );
         }
