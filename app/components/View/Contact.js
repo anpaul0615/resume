@@ -16,7 +16,7 @@ define(function(require, exports, module) {
         render: function() {
             return React.createElement(
                 'div',
-                { className: 'navbar-collapse collapse' },
+                { className: 'navbar-collapse collapse', id: 'navbar' },
                 React.createElement(
                     'ul',
                     { className: 'nav navbar-nav pull-right' },

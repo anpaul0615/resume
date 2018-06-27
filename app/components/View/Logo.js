@@ -22,7 +22,14 @@ define(function(require, exports, module) {
                 // toggle-button (by media-query)
                 React.createElement(
                     'button',
-                    { className: 'navbar-toggle collapsed' },
+                    { 
+                        className: 'navbar-toggle collapsed',
+                        'type': 'button',
+                        'data-toggle': 'collapse',
+                        'data-target': '#navbar',
+                        'aria-expanded': 'false',
+                        'aria-controls': 'navbar'
+                    },
                     React.createElement( 'span', { className:'sr-only' }, 'Toggle navigation' ),
                     React.createElement( 'span', { className:'icon-bar' } ),
                     React.createElement( 'span', { className:'icon-bar' } ),
