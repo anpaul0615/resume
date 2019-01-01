@@ -17,7 +17,7 @@ define(function(require, exports, module) {
                 React.createElement(
                     'a',
                     { className: 'navbar-brand', href: '/' },
-                    'anpaul0615.github.io'
+                    'resume.anpaul0615.com'
                 ),
                 // toggle-button (by media-query)
                 React.createElement(
