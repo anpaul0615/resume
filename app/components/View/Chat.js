@@ -34,7 +34,7 @@ define(function(require, exports, module) {
                 { style: style.root },
                 React.createElement(
                     'iframe',
-                    { style: style.iframe, src: 'https://profile-chat-pwa.anpaul0615.com' }
+                    { style: style.iframe, src: 'https://profile-chat.anpaul0615.com' }
                 )
             );
         }
