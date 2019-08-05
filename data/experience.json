@@ -8,6 +8,16 @@
       "projects": [
           {
             "tech_stacks": [
+              "Nodejs", "Hapi", "OpenAPI3"
+            ],
+            "title": "의학재료 보냉설비 온습도 모니터링 시스템",
+            "description": "온습도 디바이스 관리 및 센싱 데이터 수집/가공/조회 API 개발",
+            "title_en": "Temperature/Humidity Monitoring Ssystem For Medical Material Refrigeration Facility",
+            "description_en": "Developed of Sensing Device Management And Temperature/Humidity Data Processing API",
+            "detail": null
+          },
+          {
+            "tech_stacks": [
               "Nodejs", "Hapi", "Elasticsearch", "libpcap"
             ],
             "title": "산업제어시스템 네트워크 분석 및 이상 징후 탐지 시스템",
