@@ -17,7 +17,7 @@ define(function(require, exports, module) {
             return React.createElement(
                 "footer",
                 { style: style.root },
-                "\xA9 2018 copyright Paul An"
+                "\xA9 2019 copyright Paul An"
             );
         }
     });
